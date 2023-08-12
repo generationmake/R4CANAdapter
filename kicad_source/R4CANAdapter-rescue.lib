@@ -1,0 +1,250 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +3V3-power-supply
+#
+DEF +3V3-power-supply #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+3V3-power-supply" 0 140 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +5V-power-supply
+#
+DEF +5V-power-supply #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+5V-power-supply" 0 140 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# CONN_01X04-mechanical-connectors
+#
+DEF CONN_01X04-mechanical-connectors P 0 40 Y N 1 F N
+F0 "P" 0 250 50 H V C CNN
+F1 "CONN_01X04-mechanical-connectors" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X04
+ Pin_Header_Angled_1X04
+ Socket_Strip_Straight_1X04
+ Socket_Strip_Angled_1X04
+$ENDFPLIST
+DRAW
+S -50 -145 10 -155 0 1 0 N
+S -50 -45 10 -55 0 1 0 N
+S -50 55 10 45 0 1 0 N
+S -50 155 10 145 0 1 0 N
+S -50 200 50 -200 0 1 0 N
+X P1 1 -200 150 150 R 50 50 1 1 P
+X P2 2 -200 50 150 R 50 50 1 1 P
+X P3 3 -200 -50 150 R 50 50 1 1 P
+X P4 4 -200 -150 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# CONN_01X05-mechanical-connectors
+#
+DEF CONN_01X05-mechanical-connectors P 0 40 Y N 1 F N
+F0 "P" 0 300 50 H V C CNN
+F1 "CONN_01X05-mechanical-connectors" 100 0 50 V V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Pin_Header_Straight_1X05
+ Pin_Header_Angled_1X05
+ Socket_Strip_Straight_1X05
+ Socket_Strip_Angled_1X05
+$ENDFPLIST
+DRAW
+S -50 -195 10 -205 0 1 0 N
+S -50 -95 10 -105 0 1 0 N
+S -50 5 10 -5 0 1 0 N
+S -50 105 10 95 0 1 0 N
+S -50 205 10 195 0 1 0 N
+S -50 250 50 -250 0 1 0 N
+X P1 1 -200 200 150 R 50 50 1 1 P
+X P2 2 -200 100 150 R 50 50 1 1 P
+X P3 3 -200 0 150 R 50 50 1 1 P
+X P4 4 -200 -100 150 R 50 50 1 1 P
+X P5 5 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# C_0603-devices
+#
+DEF C_0603-devices C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "C_0603-devices" 10 -80 50 H V L CNN
+F2 "capacitors:C_0603" 0 -150 50 H I C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ C?
+ C_????_*
+ C_????
+ SMD*_c
+ Capacitor*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 75 D 40 40 1 1 P
+X ~ 2 0 -100 80 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D_Schottky_Small-devices
+#
+DEF D_Schottky_Small-devices D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "D_Schottky_Small-devices" -280 -80 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ Diode_*
+ D-Pak_TO252AA
+ *SingleDiode
+ *SingleDiode*
+ *_Diode_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 3 0 1 0 -30 -40 -20 -40 -20 -30 N
+P 3 0 1 0 -30 40 -40 40 -40 30 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# F_Small-devices
+#
+DEF F_Small-devices F 0 10 N N 1 F N
+F0 "F" -40 60 50 H V L CNN
+F1 "F_Small-devices" -120 -60 50 H V L CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+S -50 20 50 -20 0 1 0 N
+P 2 0 1 0 -50 0 50 0 N
+X ~ 1 -100 0 50 R 40 40 1 1 P
+X ~ 2 100 0 50 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# GND-power-supply
+#
+DEF GND-power-supply #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-power-supply" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Label-devices
+#
+DEF Label-devices L 0 40 Y Y 1 F N
+F0 "L" 0 200 60 H V C CNN
+F1 "Label-devices" 0 0 60 H V C CNN
+F2 "" -100 100 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -200 150 200 -150 0 1 0 N
+ENDDRAW
+ENDDEF
+#
+# Led_Small-devices
+#
+DEF Led_Small-devices D 0 10 N N 1 F N
+F0 "D" -50 125 50 H V L CNN
+F1 "Led_Small-devices" -175 -100 50 H V L CNN
+F2 "" 0 0 50 V V C CNN
+F3 "" 0 0 50 V V C CNN
+$FPLIST
+ CP*
+ SM*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+P 5 0 1 0 0 30 -20 50 -10 50 -20 50 -20 40 N
+P 5 0 1 0 20 50 0 70 10 70 0 70 0 60 N
+X K 1 -100 0 70 R 40 40 1 1 P
+X A 2 100 0 70 L 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MHP_3.2_5.0-MECH_mounting-holes
+#
+DEF MHP_3.2_5.0-MECH_mounting-holes MECH 0 40 Y Y 1 F N
+F0 "MECH" 0 150 50 H V C CNN
+F1 "MHP_3.2_5.0-MECH_mounting-holes" 50 -150 50 H V C CNN
+F2 "MECH_mounting_holes:MHP_3.2_5.0" -100 50 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 100 100 -100 1 1 0 N
+X 1 1 -300 0 200 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# R_0603-devices
+#
+DEF R_0603-devices R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "R_0603-devices" 30 -40 50 H V L CNN
+F2 "resistors:R_0603" 0 -150 50 H I C CNN
+F3 "" 0 0 50 H V C CNN
+$FPLIST
+ Resistor_*
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 40 40 1 1 P
+X ~ 2 0 -100 30 U 40 40 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SN65HVD232-CAN-transceiver
+#
+DEF SN65HVD232-CAN-transceiver U 0 40 Y Y 1 F N
+F0 "U" 500 650 60 H V C CNN
+F1 "SN65HVD232-CAN-transceiver" 500 50 60 H V C CNN
+F2 "SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm" 850 -50 60 H I C CNN
+F3 "" 0 150 60 H V C CNN
+DRAW
+S 200 700 850 0 0 1 0 N
+X D 1 0 400 200 R 50 50 1 1 O
+X GND 2 0 150 200 R 50 50 1 1 W
+X VCC 3 0 550 200 R 50 50 1 1 W
+X R 4 0 300 200 R 50 50 1 1 I
+X NC2 5 1050 150 200 L 50 50 1 1 B
+X CANL 6 1050 300 200 L 50 50 1 1 B
+X CANH 7 1050 400 200 L 50 50 1 1 B
+X NC1 8 1050 550 200 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
