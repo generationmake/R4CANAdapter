@@ -6,7 +6,7 @@
 
   (title_block
     (title "R4CANAdapter")
-    (date "2023-08-13")
+    (date "2023-08-14")
     (rev "0.1")
     (company "generationmake")
   )
@@ -1674,7 +1674,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ae1af1bf-deee-4443-af51-a0f30fd71384)
   )
-  (text "UAVCAN Dronecode connectors" (at 236.22 22.86 0)
+  (text "UCANPHY Micro connectors" (at 236.22 22.86 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c54ce87c-f0c7-4b52-992c-dbf716864ae7)
   )
